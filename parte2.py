@@ -18,7 +18,7 @@ print("La derivada de la funcion es : ",df)
 f= sympy.lambdify(x, f) 
 df= sympy.lambdify(x, df)
 
-i = 0 #contador para iteracion
+i = 0.1 #contador para iteracion
 while error > tolerancia:
   i+=1
   raiz = xi - (f(xi)/df(xi))
