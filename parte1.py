@@ -1,12 +1,12 @@
-# Algoritmo de Bisección
-# [a,b] se escogen de la gráfica de la función
+# Método de Bisección
 import numpy as np
 import matplotlib.pyplot as plt
 
 # INGRESO
+# [a,b] se escogen de la gráfica de la función
 fx = lambda x: -0.5 * x**2 + 2.5 * x + 4.5
-a = -1
-b = 6
+a = 6
+b = 7
 error = 0.001
 
 # PROCEDIMIENTO
