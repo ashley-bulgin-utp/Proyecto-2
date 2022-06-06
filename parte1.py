@@ -1,6 +1,5 @@
 # Algoritmo de Bisección
 # [a,b] se escogen de la gráfica de la función
-# error = toleracion
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -8,7 +7,7 @@ import matplotlib.pyplot as plt
 fx = lambda x: -0.5 * x**2 + 2.5 * x + 4.5
 a = -1
 b = 6
-toleracion = 0.001
+error = 0.001
 
 # PROCEDIMIENTO
 tabla = []
@@ -17,7 +16,7 @@ tramo = b - a
 fa = fx(a)
 fb = fx(b)
 i = 1
-while (tramo > toleracion):
+while (tramo > error):
     c = (a + b) / 2
     fc = fx(c)
     tabla.append([i, a, c, b, fa, fc, fb, tramo])
